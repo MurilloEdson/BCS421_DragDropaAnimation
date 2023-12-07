@@ -18,6 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
+            android:gravity="center"
             android:background="@color/material_dynamic_primary95"
             android:padding="10dp">
 
@@ -55,7 +56,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="6"
+            android:layout_weight="5"
             android:background="#BBB"
             android:orientation="horizontal"
             android:padding="10dp">
@@ -63,38 +64,38 @@
 
             <ImageView
                 android:id="@+id/holder01"
+                android:background="@drawable/border"
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
-                 />
+                android:layout_margin="2dp" />
 
             <ImageView
                 android:id="@+id/holder02"
+                android:background="@drawable/border"
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
-                 />
+                android:layout_margin="2dp" />
 
             <ImageView
                 android:id="@+id/holder03"
+                android:background="@drawable/border"
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
-                 />
+                android:layout_margin="2dp" />
 
             <ImageView
                 android:id="@+id/holder04"
+                android:background="@drawable/border"
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
-                 />
+                android:layout_margin="2dp" />
 
             <ImageView
                 android:id="@+id/holder05"
+                android:background="@drawable/border"
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
-                />
+                android:layout_margin="2dp" />
 
         </LinearLayout>
 
@@ -105,8 +106,40 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:background="@color/design_default_color_secondary">
+        android:gravity="center"
+        android:background="@color/design_default_color_secondary"
+        android:orientation="vertical">
 
+
+        <ImageView
+            android:id="@+id/rocket"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:src="@drawable/rocket01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Animation" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset" />
+        </LinearLayout>
 
     </LinearLayout>
 
